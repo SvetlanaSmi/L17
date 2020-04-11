@@ -46,20 +46,27 @@
     repeating-linear-gradient(90deg,
     transparent, transparent 70px,
     rgba(51, 24, 1, 0.945) 70px, rgba(51, 24, 1, 0.945) 140px);
-    display: table-cell;
+    /* display: table-cell;
     vertical-align: middle;
+    border-spacing: 8px; */
+    
 }
 .whiterow div,
 .blackrow div {
-    display: table-cell;
-    width: 70px;
-    height: 70px;
-    padding: 4px;
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+}
+.whiterow div,
+.blackrow div {
+    margin-left: 5px;
+    margin-top: 4px;
+
 }
 .whiterow>div:nth-child(even), 
 .blackrow>div:nth-child(odd) {
-    width: 70px;
-    height: 70px;
+    width: 61px;
+    height: 61px;
     border-radius: 50%; 
     background: radial-gradient(circle, 
     rgba(51,51,48,1) 25%, 
